@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>PLIL</title>
-        <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -12,8 +12,10 @@
         <div id="navbar">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo base_url(); ?>">Home</a></li>
+            <li><a href="<?php echo base_url(); ?>jobs">Open Jobs</a></li>
+            <li><a href="<?php echo base_url(); ?>apply_procedure">Apply Procedure</a></li>
             <li><a href="<?php echo base_url(); ?>about">About Us</a></li>
-            <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+            <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
            </ul>
 
           <ul class="nav navbar-nav navbar-right">
