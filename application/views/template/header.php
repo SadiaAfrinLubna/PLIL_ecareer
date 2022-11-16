@@ -12,17 +12,23 @@
         <div id="navbar">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo base_url(); ?>">Home</a></li>
-            <li><a href="<?php echo base_url(); ?>about">About</a></li>
+            <li><a href="<?php echo base_url(); ?>about">About Us</a></li>
             <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
-            <li><a href="<?php echo base_url(); ?>login">Login</a></li>
-            <li><a href="<?php echo base_url(); ?>signup">Sign Up</a></li>
-   
-          </ul>
+           </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="<?php echo base_url(); ?>users/register">Register</a></li>
+        </ul>
         </div>
       </div>
     </nav>
 
     <div class="container">
+      <!-- Flash messages -->
+      <?php if($this->session->flashdata('user_registered')): ?>
+        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
+      <?php endif; ?>
+
 
 
 
